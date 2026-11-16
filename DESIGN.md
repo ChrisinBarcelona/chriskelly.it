@@ -24,7 +24,7 @@ Black page, white light-weight type, no color. The only drama is scale: small wo
   --white: #ffffff;
   --mark:  #d9d9d9; /* menu icon only */
 
-  --font-display: "Neue Haas Grotesk Display Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Inter Tight", "Neue Haas Grotesk Display Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-mono:    "Atkinson Hyperlegible Mono", ui-monospace, monospace;
 
   --fw-light: 300;  /* 45 Light */
@@ -83,10 +83,16 @@ Hero tracking in the file is inconsistent (2.97px on "BUILD BRAND" and "IMPOSSIB
 - Section prompts: "What we do", "Got a project in mind?" / "Let's talk"
 - Skills: Web Development, Web Design, UI / UX, Strategy, Branding, Art Direction, Packaging, Illustration
 
-## Open decisions (the Figma does not answer these)
+## Decisions
 
-1. **Studio or person?** Copy says "CKLY Studio" and "we", the domain is chriskelly.it, the email is studio@ckly.studio. Pick one identity and use it everywhere.
-2. **Nav labels disagree.** Top nav: Home, Project, Skills, Call. Hero menu: Projects, Skills, Contact. Contact section: Contact. Choose one set. Suggested: Projects, Skills, Contact.
-3. **Font licence.** Neue Haas Grotesk Display Pro is a paid web font (Adobe Fonts or Monotype). Atkinson Hyperlegible Mono is free on Google Fonts.
-4. **Not designed yet:** mobile and tablet, hover/focus states, motion, project images (frames are empty), project detail pages, an About section, real project copy (currently lorem ipsum).
-5. **Social links** are two-letter codes (BE, IG, GM). Confirm GM, and add accessible labels in code.
+- **Identity:** CKLY Studio, "we" voice, everywhere.
+- **Nav:** Projects, Skills, Contact (top nav, hero menu and overlay menu all match).
+- **Fonts:** Inter Tight (300, 300 italic, 500) stands in for Neue Haas Grotesk Display, and Atkinson Hyperlegible Mono is used as designed. Both are free from Google Fonts. Neue Haas stays second in the stack, so a licence later is a one-line swap.
+- **Responsive:** below 800px the nav links collapse into the plus menu, projects stack image-first, skills become one column, and "Let's talk" moves above the address.
+- **Motion:** hero lines rise in sequence on load, hairline underlines draw in on hover, arrow links nudge right, and "Let's talk" and the menu links go italic on hover (the italic is the emphasis device from the hero). All load motion is skipped under `prefers-reduced-motion`.
+
+## Still open
+
+- Project images, names, categories and copy (placeholders now).
+- Behance and Instagram URLs. GM is assumed to mean email.
+- Project detail pages and an About section.

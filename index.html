@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CKLY Studio</title>
+  <meta name="description" content="CKLY Studio builds brand identities that make you impossible to ignore. Branding, art direction, web design and development from Barcelona.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono&family=Inter+Tight:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <header class="nav">
+    <a class="nav__brand" href="#top">CKLY Studio</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Menu">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main id="top">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__block">
+        <h1 class="hero__title">
+          <span class="hero__line"><span class="hero__aside">(WE)</span> BUILD BRAND</span>
+          <span class="hero__line">IDENTITIES</span>
+          <span class="hero__line">THAT MAKE YOU</span>
+          <span class="hero__line"><em>IMPOSSIBLE</em></span>
+          <span class="hero__line hero__line--last">TO IGNORE</span>
+        </h1>
+        <nav class="hero__menu" aria-label="Sections">
+          <a href="#projects"><span aria-hidden="true">→</span> Projects</a>
+          <a href="#skills"><span aria-hidden="true">→</span> Skills</a>
+          <a href="#contact"><span aria-hidden="true">→</span> Contact</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Projects</h2>
+
+      <article class="project">
+        <div class="project__text">
+          <span class="pill">Branding</span>
+          <h3 class="project__name">Project #01: Name</h3>
+          <p>One line on the client and the brief. One line on what the studio made. One line on what changed for them after launch.</p>
+        </div>
+        <figure class="project__media" aria-label="Project #01 image">
+          <span class="project__index" aria-hidden="true">01</span>
+        </figure>
+      </article>
+
+      <article class="project">
+        <div class="project__text">
+          <span class="pill">Web Design</span>
+          <h3 class="project__name">Project #02: Name</h3>
+          <p>One line on the client and the brief. One line on what the studio made. One line on what changed for them after launch.</p>
+        </div>
+        <figure class="project__media" aria-label="Project #02 image">
+          <span class="project__index" aria-hidden="true">02</span>
+        </figure>
+      </article>
+
+      <article class="project">
+        <div class="project__text">
+          <span class="pill">Packaging</span>
+          <h3 class="project__name">Project #03: Name</h3>
+          <p>One line on the client and the brief. One line on what the studio made. One line on what changed for them after launch.</p>
+        </div>
+        <figure class="project__media" aria-label="Project #03 image">
+          <span class="project__index" aria-hidden="true">03</span>
+        </figure>
+      </article>
+    </section>
+
+    <section class="skills" id="skills" aria-labelledby="skills-title">
+      <h2 class="section-title" id="skills-title">What we do</h2>
+      <div class="skills__cols">
+        <ul class="rows">
+          <li>Web Development</li>
+          <li>Web Design</li>
+          <li>UI / UX</li>
+          <li>Strategy</li>
+        </ul>
+        <ul class="rows">
+          <li>Branding</li>
+          <li>Art Direction</li>
+          <li>Packaging</li>
+          <li>Illustration</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <address class="contact__address">
+        <span>CKLY Design Studio</span>
+        <span>Calle Paris, 157</span>
+        <span>08036</span>
+        <span>Barcelona</span>
+        <a href="tel:+34603766507">+34 603 766 507</a>
+        <a href="mailto:studio@ckly.studio">studio@ckly.studio</a>
+      </address>
+      <div class="contact__cta">
+        <p class="contact__prompt">Got a project in mind?</p>
+        <h2 id="contact-title"><a class="contact__big" href="mailto:studio@ckly.studio">Let’s talk</a></h2>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__social">
+      <li><a href="#" aria-label="Behance">BE</a></li>
+      <li><a href="#" aria-label="Instagram">IG</a></li>
+      <li><a href="mailto:studio@ckly.studio" aria-label="Email">GM</a></li>
+    </ul>
+    <span>Studio</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
